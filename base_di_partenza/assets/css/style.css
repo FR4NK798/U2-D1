@@ -202,6 +202,9 @@ article img{
     h1{
         font-size: 4.6rem;
     }
+    article h2{
+        font-size: 1.8rem;
+    }
     /* anche a medio padding in line */
     article{
         padding-inline: 1.2rem;
@@ -248,7 +251,7 @@ article img{
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     header li{
         display: inline;
     }
@@ -283,7 +286,7 @@ article img{
         margin-inline: auto;
         /* stesse a piccolo */
         font-size: 1.8rem;
-        margin-bottom: 3em;
+        margin-bottom: 10rem;
         /* section margin bottom */
     }
     section h2{
@@ -321,7 +324,7 @@ article img{
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
     header li{
         display: inline;
     }
@@ -330,22 +333,106 @@ article img{
         /* display: inline-block; */
         font-size: 2rem;
         padding: 3rem;
+        height: 7rem;
+        padding-block: 0.5rem;
+        font-size: 1.8rem;
     }
     header div{
         display: inline-block;
+    
     }
-    div img{
-        margin-bottom: 0px;
-    }
+    
     div img,p{
         display: inline-block;
     }
     
     header nav{
         display: inline-block;
+        margin-inline-start: 17rem;
     }
-    header img{
+    header div img{
         margin-block-end: 0px;
+        vertical-align: middle;
+    }
+    body{
+        margin-inline: 8rem;
+    }
+    h1{
+        font-size: 5rem;
+        margin-bottom: 5rem;
+    }
+    main{
+        padding-inline: 3rem;
+        line-height: 3rem;
+    }
+    article{
+        font-size: medium;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    article div img{
+        height: 6rem;
+    }
+    article ul li{
+        margin-block: 1rem;
+    }
+    table{
+        margin-block-start: 5rem;
+        margin-block-end: 9rem;
+        margin-inline: auto;
+        /* stesse a piccolo */
+        font-size: 1.3rem;
+        /* section margin bottom */
+        width: 60rem;
+    }
+    table th,td{
+        padding-block: 0.8rem;
     }
 
+section,iframe{
+    display: inline-block;
+    width: 49.7%;
+}
+section{
+    border-radius: 20px;
+}
+iframe{
+    vertical-align: bottom;
+    height: 22rem;
+}
+section h2{
+    background-color: #a3a3a3;
+    font-size: 2.5rem;
+margin-block-start: 1rem;
+}
+input,button{
+    font-size: 1rem;
+    padding-block: 1.5rem;
+    
+}
+input{
+    padding-inline-end: 20rem;
+    
+}
+button{
+    padding-inline: 3rem;
+}
+aside h2{
+    font-size: 2.7rem;
+}
+aside div{
+    display: inline-block;
+    width: 33%;
+}
+aside div p{
+    display: block;
+}
+footer{
+    font-size: 1.5rem;
+    padding-block: 3rem;
+}
+address{
+    padding-inline: 20rem;
+}
 }
